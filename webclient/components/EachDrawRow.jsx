@@ -6,6 +6,7 @@ import ActionHome from 'material-ui/svg-icons/action/swap-vertical-circle';
 import Games from 'material-ui/svg-icons/av/games';
 import Up from 'material-ui/svg-icons/navigation/arrow-upward';
 import Down from 'material-ui/svg-icons/navigation/arrow-downward';
+import PropTypes from 'prop-types';
 export default class EachDrawRow extends React.Component{   
     render(){
         return(
@@ -19,3 +20,8 @@ export default class EachDrawRow extends React.Component{
         )
     }
 }
+EachDrawRow.propTypes = {
+ title : PropTypes.string.isRequired,
+ subtitle: PropTypes.string.isRequired,
+ avatar: PropTypes.string.isRequired,
+};
